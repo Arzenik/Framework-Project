@@ -1,0 +1,167 @@
+.back {
+    background-image: url("Space/SPACE\ \(9\).jpg");
+    width: 100%;
+    height: 100%;
+}
+
+#motionPath {
+    visibility: hidden;
+}
+
+#motionpath {
+    visibility: hidden;
+}
+
+
+#uranus {
+    width: 125px;
+    height: 125px;
+    left: 102px;
+    top: 400px;
+    position: absolute
+}
+
+#jupiter {
+    width: 285px;
+    height: 285px;
+    left: 1000px;
+    top: 100px;
+    position: absolute
+}
+
+#moon {
+    width: 4%;
+    height: 7%;
+    left: 39px;
+    top: 144px;
+
+    position: absolute
+}
+
+#saturn {
+    width: 20%;
+    height: 24%;
+    left: 663px;
+    top: 68px;
+    position: absolute
+}
+
+#mars {
+    width: 14%;
+    height: 24%;
+    left: 48px;
+    top: 577px;
+    position: absolute;
+}
+
+#blueplanet {
+    width: 14%;
+    height: 24%;
+    left: 392px;
+    top: 620px;
+
+    position: absolute
+}
+
+#earth {
+    width: 14%;
+    height: 24%;
+    left: 134px;
+    top: 100px;
+    rotate: 360;
+    position: absolute
+}
+
+#whitered {
+    width: 14%;
+    height: 24%;
+    left: 700px;
+    top: 600px;
+    rotate: 360;
+    position: absolute
+}
+
+#beige {
+    width: 14%;
+    height: 24%;
+    left: 1000px;
+    top: 500px;
+    rotate: 360;
+    position: absolute
+}
+
+#satellitearth {
+    width: 135.40px;
+    height: 52.36px;
+    left: 473.50px;
+    top: 427.43px;
+    position: absolute;
+    transform: rotate(-152.96deg);
+
+    transform-origin: 0 0
+}
+
+#satellitmars {
+    width: 72.26px;
+    height: 54.30px;
+    left: 818px;
+    top: 1038.55px;
+    position: absolute;
+    transform: rotate(-54.12deg);
+    transform-origin: 0 0
+}
+
+#sun {
+    width: 14%;
+    height: 24%;
+    left: 412px;
+    top: 87px;
+    position: absolute
+}
+
+#namemars {
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    position: absolute;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    opacity: 0;
+    background-color: brown;
+}
+
+#nameuranus {
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    position: absolute;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(152, 164, 255);
+}
+
+#nameearth {
+    position: absolute;
+    left: 200px;
+    top: 240px;
+    position: absolute;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(4, 29, 222);
+}
+
+#namejupiter {
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(255, 231, 208);
+}
