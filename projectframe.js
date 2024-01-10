@@ -20,7 +20,7 @@ gsap.from("#saturn", {
         scale: 2,
         opacity: 0,
     }),
-    gsap.from("#whitered", {
+    gsap.from("#whiteRed", {
         delay: 2,
         duration: 5,
         scale: 2,
@@ -49,7 +49,7 @@ gsap.from("#saturn", {
         scale: 2,
         opacity: 0,
     }),
-    gsap.from("#blueplanet", {
+    gsap.from("#bluePlanet", {
         delay: 3,
         duration: 5,
         scale: 2,
@@ -68,6 +68,7 @@ gsap.from("#saturn", {
         opacity: 0,
     }),
     gsap.to("#moon", {
+
         rotate: 360,
         duration: 10,
         autoRotate: true,
@@ -76,6 +77,7 @@ gsap.from("#saturn", {
         repeat: -1,
     });
 gsap.to("#earth", {
+
     duration: 10,
     rotate: 360,
     autoRotate: true,
@@ -83,27 +85,107 @@ gsap.to("#earth", {
 
     repeat: -1,
 });
-gsap.to("#blueplanet", {
-
+gsap.to("#blue-planet", {
 
 });
-hovermars.onmouseenter = function () {
-    gsap.to("#namemars", {
+hoverMars.onmouseenter = function () {
+    gsap.to("#nameMars", {
         opacity: 1,
     })
 };
-hoveruranus.onmouseenter = function () {
-    gsap.to("#nameuranus", {
+hoverUranus.onmouseenter = function () {
+    gsap.to("#nameUranus", {
         opacity: 1,
     })
 };
-hoverearth.onmouseenter = function () {
-    gsap.to("#nameearth", {
+hoverEarth.onmouseenter = function () {
+    gsap.to("#nameEarth", {
         opacity: 1,
     })
 };
-hoverjupiter.onmouseenter = function () {
-    gsap.to("#namejupiter", {
+hoverJupiter.onmouseenter = function () {
+    gsap.to("#nameJupiter", {
         opacity: 1,
     })
 };
+hoverBluePlanet.onmouseenter = function () {
+    gsap.to("#nameBluePlanet", {
+        opacity: 1,
+    })
+};
+hoverWhiteRed.onmouseenter = function () {
+    gsap.to("#nameWhiteRed", {
+        opacity: 1,
+    })
+};
+hoverSaturn.onmouseenter = function () {
+    gsap.to("#nameSaturn", {
+        opacity: 1,
+    })
+};
+hoverSun.onmouseenter = function () {
+    gsap.to("#nameSun", {
+        opacity: 1,
+    })
+};
+hoverBeige.onmouseenter = function () {
+    gsap.to("#nameBeige", {
+        opacity: 1,
+    })
+};
+
+gsap.from("#message", {
+    // Ce qui change par rapport à avant
+    scale: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".section2",
+        // afficher les marqueurs de ScrollTrigger
+        // utile pour débugger
+        // position des marqueurs
+        start: "top 60%",
+        end: "bottom 30%",
+        scrub: 1,
+    },
+});
+gsap.to("[data-speed]", {
+    y: (i, el) =>
+        (1 - parseFloat(el.getAttribute("data-speed"))) *
+        ScrollTrigger.maxScroll(window),
+    ease: "none",
+    scrollTrigger: {
+        start: 0,
+        end: "max",
+        invalidateOnRefresh: true,
+        scrub: 0,
+    },
+});
+gsap.from(["#satellite1", "#satellite2", "#satellite3", "#satellite4", "#satellite5", "#satellite6", "#satellite7", "#satellite8", "#satellite9"], {
+    // Ce qui change par rapport à avant
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#message",
+        // afficher les marqueurs de ScrollTrigger
+        // utile pour débugger
+        // position des marqueurs
+        start: "top 90%",
+        end: "bottom 10%",
+        scrub: 1,
+    },
+});
+gsap.to(".section2", {
+    // Ce qui change par rapport à avant
+    duration: 10,
+    pin: true,
+    scrollTrigger: {
+        trigger: ".section2",
+        // afficher les marqueurs de ScrollTrigger
+        // utile pour débugger
+        markers: true,
+        // position des marqueurs
+        start: "top 0%",
+        end: "bottom 100%",
+        pin: true,
+        scrub: 1,
+    },
+});

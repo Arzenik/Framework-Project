@@ -1,7 +1,14 @@
+body {
+    margin: 0;
+}
+
 .back {
-    background-image: url("Space/SPACE\ \(9\).jpg");
+    background-image: url("space/space-background.jpg");
+}
+
+.section1 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #motionPath {
@@ -54,7 +61,7 @@
     position: absolute;
 }
 
-#blueplanet {
+#bluePlanet {
     width: 14%;
     height: 24%;
     left: 392px;
@@ -72,7 +79,7 @@
     position: absolute
 }
 
-#whitered {
+#whiteRed {
     width: 14%;
     height: 24%;
     left: 700px;
@@ -90,26 +97,6 @@
     position: absolute
 }
 
-#satellitearth {
-    width: 135.40px;
-    height: 52.36px;
-    left: 473.50px;
-    top: 427.43px;
-    position: absolute;
-    transform: rotate(-152.96deg);
-
-    transform-origin: 0 0
-}
-
-#satellitmars {
-    width: 72.26px;
-    height: 54.30px;
-    left: 818px;
-    top: 1038.55px;
-    position: absolute;
-    transform: rotate(-54.12deg);
-    transform-origin: 0 0
-}
 
 #sun {
     width: 14%;
@@ -119,7 +106,7 @@
     position: absolute
 }
 
-#namemars {
+#nameMars {
     position: absolute;
     left: 200px;
     top: 500px;
@@ -131,7 +118,7 @@
     background-color: brown;
 }
 
-#nameuranus {
+#nameUranus {
     position: absolute;
     left: 200px;
     top: 300px;
@@ -143,7 +130,7 @@
     background-color: rgb(152, 164, 255);
 }
 
-#nameearth {
+#nameEarth {
     position: absolute;
     left: 200px;
     top: 240px;
@@ -155,7 +142,7 @@
     background-color: rgb(4, 29, 222);
 }
 
-#namejupiter {
+#nameJupiter {
     position: absolute;
     left: 1000px;
     top: 0px;
@@ -164,4 +151,173 @@
     text-align: center;
     opacity: 0;
     background-color: rgb(255, 231, 208);
+}
+
+#nameBluePlanet {
+    position: absolute;
+    left: 400px;
+    top: 500px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(19, 19, 255);
+}
+
+#nameWhiteRed {
+    position: absolute;
+    left: 700px;
+    top: 470px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(82, 0, 0);
+}
+
+#nameSaturn {
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(149, 131, 0);
+}
+
+#nameSun {
+    position: absolute;
+    left: 530px;
+    top: 240px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(133, 82, 0);
+}
+
+#nameBeige {
+    position: absolute;
+    left: 1100px;
+    top: 380px;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(185, 40, 0);
+}
+
+#tunnel {
+    width: 0%;
+    height: 0%;
+    top: 1000px;
+    position: absolute
+}
+
+#message {
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    background-color: red;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section2 {
+    top: 900px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    opacity: 1;
+    overflow-anchor: auto;
+}
+
+#satellite1 {
+    width: 285px;
+    height: 285px;
+    left: 1000px;
+    top: 100px;
+    position: absolute;
+}
+
+#satellite2 {
+    width: 125px;
+    height: 125px;
+    left: 102px;
+    top: 400px;
+    position: absolute;
+}
+
+#satellite3 {
+    width: 125px;
+    height: 125px;
+    left: 500px;
+    top: 200px;
+    position: absolute;
+}
+
+#satellite4 {
+    width: 125px;
+    height: 125px;
+    left: 663px;
+    top: 68px;
+    position: absolute;
+}
+
+#satellite5 {
+    width: 14%;
+    height: 24%;
+    left: 48px;
+    top: 577px;
+    position: absolute;
+}
+
+#satellite6 {
+    width: 14%;
+    height: 24%;
+    left: 392px;
+    top: 620px;
+    position: absolute;
+}
+
+#satellite7 {
+    width: 14%;
+    height: 24%;
+    left: 134px;
+    top: 100px;
+    rotate: 360;
+    position: absolute;
+}
+
+#satellite8 {
+    width: 14%;
+    height: 24%;
+    left: 700px;
+    top: 600px;
+    rotate: 360;
+    position: absolute;
+}
+
+#satellite9 {
+    width: 14%;
+    height: 24%;
+    left: 1000px;
+    top: 500px;
+    rotate: 360;
+    position: absolute;
+}
+
+#astro {
+    width: 14%;
+    height: 24%;
+    left: 1000px;
+    top: 2000px;
+    rotate: 360;
+    position: absolute;
 }
