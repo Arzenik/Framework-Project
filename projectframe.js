@@ -251,8 +251,11 @@ avoidAstro.onmousemove = function (event) {
     console.log(event.offsetX, event.offsetY)
 
     const x_pointer = event.offsetX
-    const x_center = 105
+    const x_center = window.innerWidth / 2;
+    const y_pointer = event.offsetY
+    const y_center = window.innerHeight / 2;
     gsap.to("#astro", {
-        x: x_center - x_pointer
+        x: x_center - x_pointer,
+        y: y_center - y_pointer
     })
 };
