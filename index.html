@@ -9,15 +9,24 @@
 
     <!-- titre de la page -->
     <title>Mon super titre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto&family=Saira+Extra+Condensed&family=Space+Mono&display=swap"
+        rel="stylesheet">
     <!-- lien vers le fichier de style CSS -->
     <link rel="stylesheet" href="projectframe.css" />
 </head>
 
-<body class="back">
+<body>
 
     <div class="section1">
+        <p id="le" data-speed="1.8">Le</p>
+        <p id="système" data-speed="1.6">système</p>
+        <p id="solaire" data-speed="1.4">solaire</p>
         <p id="nameSun" data-speed="1.3">Sun</p>
-        <div id="hoverSun"><img id="sun" src="space/sun.jpg" data-speed="1.5" /></div>
+        <div id="hoverSun"><img id="sun" src="space/sun.png" data-speed="1.5" /></div>
         <p id="nameSaturn" data-speed="1.3">Saturn</p>
         <div id="hoverSaturn"><img id="saturn" src="space/saturn.png" data-speed="2.4" /></div>
         <img id="moon" src="space/moon.png" />
@@ -36,26 +45,44 @@
         <p id="nameWhiteRed" data-speed="1.7">White Red</p>
         <div id="hoverWhiteRed"><img id="whiteRed" alt="whiteRed" src="space/white-red.png" data-speed="1.5" />
             <p id="nameBeige" data-speed="1.8">Beige</p>
-            <div id="hoverBeige"><img id="beige" alt="beige" src="space/beige.jpg" data-speed="1.8" /></div>
+            <div id="hoverBeige"><img id="beige" alt="beige" src="space/beige.png" data-speed="1.8" /></div>
         </div>
-        <div class="section2">
-            <p id="message">Message</p>
-            <img id="satellite1" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite2" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite3" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite4" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite5" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite6" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite7" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite8" alt="satellite" src="space/Satellite (2).png" />
-            <img id="satellite9" alt="satellite" src="space/Satellite (2).png" />
+    </div>
+    <div class="section2">
+        <p id="message">L'univers de Gullivers</p>
+        <img id="satellite1" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite2" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite3" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite4" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite5" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite6" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite7" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite8" alt="satellite" src="space/Satellite (2).png" />
+        <img id="satellite9" alt="satellite" src="space/Satellite (2).png" />
+        <img id="star1" alt="satellite" src="space/star (2).png" />
+        <img id="star2" alt="satellite" src="space/star (2).png" />
+        <img id="star3" alt="satellite" src="space/star (2).png" />
+        <img id="star4" alt="satellite" src="space/star (2).png" />
+        <img id="star5" alt="satellite" src="space/star (2).png" />
+        <img id="star6" alt="satellite" src="space/star (2).png" />
+        <img id="star7" alt="satellite" src="space/star (2).png" />
+        <img id="star8" alt="satellite" src="space/star (2).png" />
+        <img id="star9" alt="satellite" src="space/star (2).png" />
 
-            <img id="astro" alt="satellite" src="space/Astronaut (4).png" />
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-        <script src="projectframe.js"></script>
+    </div>
+    <div class="section3" id="avoidAstro">
+        <img id="astro" alt="satellite" src="space/Astronaut (4).png" />
+        <svg id="motionPath" width="100%" height="400" preserveAspectRatio="xMinYMin" viewBox="0 0 400 200">
+            <path stroke="black" fill="none" d="M61.5,99.25 C194.833,165.916 235.666,50.083 369,116.75" />
+        </svg>
+    </div>
+    <img id="satelliteSection3" alt="satellite" src="space/Satellite (1).png" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="projectframe.js"></script>
 
 </body>
 

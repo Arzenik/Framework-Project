@@ -133,21 +133,6 @@ hoverBeige.onmouseenter = function () {
         opacity: 1,
     })
 };
-
-gsap.from("#message", {
-    // Ce qui change par rapport à avant
-    scale: 2,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".section2",
-        // afficher les marqueurs de ScrollTrigger
-        // utile pour débugger
-        // position des marqueurs
-        start: "top 60%",
-        end: "bottom 30%",
-        scrub: 1,
-    },
-});
 gsap.to("[data-speed]", {
     y: (i, el) =>
         (1 - parseFloat(el.getAttribute("data-speed"))) *
@@ -160,6 +145,22 @@ gsap.to("[data-speed]", {
         scrub: 0,
     },
 });
+gsap.from("#message", {
+    // Ce qui change par rapport à avant
+    scale: 3,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".section2",
+        // markers: true,
+        // afficher les marqueurs de ScrollTrigger
+        // utile pour débugger
+        // position des marqueurs
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1,
+    },
+});
+
 gsap.from(["#satellite1", "#satellite2", "#satellite3", "#satellite4", "#satellite5", "#satellite6", "#satellite7", "#satellite8", "#satellite9"], {
     // Ce qui change par rapport à avant
     opacity: 0,
@@ -172,20 +173,86 @@ gsap.from(["#satellite1", "#satellite2", "#satellite3", "#satellite4", "#satelli
         end: "bottom 10%",
         scrub: 1,
     },
+    stagger: 0.1
 });
-gsap.to(".section2", {
+gsap.from(".section2", {
     // Ce qui change par rapport à avant
-    duration: 10,
-    pin: true,
     scrollTrigger: {
         trigger: ".section2",
         // afficher les marqueurs de ScrollTrigger
         // utile pour débugger
-        markers: true,
+        // markers: true,
         // position des marqueurs
         start: "top 0%",
-        end: "bottom 100%",
+        end: "bottom +=500px",
         pin: true,
-        scrub: 1,
     },
 });
+gsap.to("#satelliteSection3", {
+    duration: 10,
+    motionPath: {
+        path: "#motionPath path",
+        align: "#motionPath path",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5],
+    },
+    ease: "none",
+});
+gsap.to(["#satellite1", "#satellite2", "#satellite3", "#satellite4", "#satellite5", "#satellite6", "#satellite7", "#satellite8", "#satellite9"], {
+    // Ce qui change par rapport à avant
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#message",
+        // afficher les marqueurs de ScrollTrigger
+        // markers: true,
+        // utile pour débugger
+        // position des marqueurs
+        start: "top",
+        end: "bottom ",
+        scrub: 1,
+    },
+    stagger: 0.1
+});
+gsap.to(["#satellite1", "#satellite2", "#satellite3", "#satellite4", "#satellite5", "#satellite6", "#satellite7", "#satellite8", "#satellite9"], {
+    // Ce qui change par rapport à avant
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#message",
+        // afficher les marqueurs de ScrollTrigger
+        // markers: true,
+        // utile pour débugger
+        // position des marqueurs
+        start: "top",
+        end: "bottom ",
+        scrub: 1,
+    },
+    stagger: 0.1
+});
+gsap.from(["#star1", "#star2", "#star3", "#star4", "#star5", "#star6", "#star7", "#star8", "#star9"], {
+    // Ce qui change par rapport à avant
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#message",
+        // afficher les marqueurs de ScrollTrigger
+        //markers: true,
+        // utile pour débugger
+        // position des marqueurs
+        start: "top",
+        end: "bottom ",
+        scrub: 1,
+    },
+    stagger: 0.1
+});
+avoidAstro.onmousemove = function (event) {
+
+    console.log(event.offsetX, event.offsetY)
+
+    const x_pointer = event.offsetX
+    const x_center = 105
+    gsap.to("#astro", {
+        x: x_center - x_pointer
+    })
+};
